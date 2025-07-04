@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  height: 100%;
+}
+
+
+header {
+  background-color: #004d40;
+  color: #fff;
+  padding: 20px 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  text-align: center;
+
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+main {
+  background-color: #597e7c;
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  color: #111;
+  padding: 20px;
+  border: 2px solid #ccc;
+}
+
+section {
+  background-color: #d5e7e7;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #00796b;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  font-style: italic;
+  background: #004d40;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; 
+}
+
+figure {
+  background-color: #3c5547;
+  border: 5px solid #0b221b;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+figure img {
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block; 
+  border: 5px solid rgb(20, 81, 63);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+figcaption {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 8px;
+}
+
+.imagem-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destaque {
+  font-style: italic;
+  font-size: 25px;
+}
+
+#importante {
+  border-top: 10px solid red;
+  font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    height: auto;
+  }
+
+  figure {
+    width: 90%;
+    height: auto;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+}
